@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    
     <!-- Responsive navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
@@ -42,17 +43,59 @@
         </div>
     </nav>
     <!-- Page content-->
-    <div class="container">
-        <div class="text-center mt-5">
-            <h1>A Bootstrap 5 Starter Template</h1>
-            <p class="lead">A complete project boilerplate built with Bootstrap</p>
-            <p>Bootstrap v5.1.3</p>
-        </div>
-    </div>
-    <!-- Bootstrap core JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="assets/js/scripts.js"></script>
+    <button type="button" class="btn btn-primary">Add Student</button>
+    <button type="button" class="btn btn-secondary">Refresh Page</button>
+    <table id="myTable" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Age</th>
+            <th scope="col">Average Mark</th>
+            <th scope="col">Teacher</th>
+            <th scope="col"></th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Thabani</td>
+            <td>30</td>
+            <td>60%</td>
+            <td>Joe Soap</td>
+            <td><td><button class="btn btn-light">Edit</button> <button onclick="myDeleteFunction()" class="btn btn-danger">Delete</button></td></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Steve Jobs</td>
+            <td>25</td>
+            <td>70%</td>
+            <td>Isaac Newton</td>
+            <td><td><button class="btn btn-light">Edit</button> <button class="btn btn-danger">Delete</button></td></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td >Bill gates</td>
+            <td>50</td>
+            <td>50%</td>
+            <td>Joe Soap</td>
+            <td> </td>
+            <td><button class="btn btn-light">Edit</button> <button class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+        <thead>
+            <tr>
+              <th scope="col">3</th>
+              <th scope="col"></th>
+              <th scope="col">35</th>
+              <th scope="col">60%</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+      </table>
 </body>
 
 </html>
